@@ -20,8 +20,7 @@ Hozz létre egy Postman collectionben négy kérést, minden egyes műveletre!
 Írj JavaScript assertet is!
 
 Hozz létre egy tesztesetet, új collectiont, mely két kérésből áll, az első felvisz egy új jóslatot, a második lekéri, és
-ellenőrzi, hogy a szöveg le van-e titkosítva. (Nem egyenlőség vizsgálat, hanem nem-egyenlőség vizsgálat! Használd
-a `!=` operátort!)
+ellenőrzi, hogy a szöveg le van-e titkosítva.
 
 Milyen teszteseteket írnál még? Mi okoz nehézséget az alkalmazás tesztelésében? 
 
