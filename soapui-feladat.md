@@ -13,7 +13,7 @@ tesztesetet! Próbálkozz boundary-value analysis-szel is!
 
 A http://www.learnwebservices.com/locations/ címen megtalálható egy kedvenc
 helyeket nyilvántartó alkalmazás. Ez nyújt SOAP webszolgáltatás API-t,
-mely WSDL dokumentuma megtalálható a http://www.learnwebservices.com/services/locations?wsdl
+mely WSDL dokumentuma megtalálható a http://www.learnwebservices.com/locations/services/locations?wsdl
 címen.
 
 Ez tipikusan megvalósítja a CRUD mûveleteket, írj mind a négy mûvelethez (listázás, létrehozás,
@@ -39,8 +39,8 @@ Teszt lépések:
 
 Meg kell hívni a "createAccount" operációt, aminek hatására a válaszban a <account-number> tagen belül
 megjelenik a létrehozott bankszámlaszám (legyen ez a no1)
-Meg kell hívni a "createAccount" operációt még egyszer, aminek hatására a válaszban a <account-number> tagen belül
-megjelenik a létrehozott bankszámlaszám (legyen ez a no2)
+Meg kell hívni a "createAccount" operációt még egyszer, aminek hatására a válaszban a <account-number> 
+tagen belül megjelenik a létrehozott bankszámlaszám (legyen ez a no2)
 Meg kell hívni a "deposit" operációt, aminek az <dest-account-number> tagjében meg kell adni a no1 számot,
 valamint legyen az összeg 200 egység
 
@@ -49,7 +49,8 @@ Elvárt eredmény:
 Meg kell hívni a "transfer" operációt, aminek az <src-account-number> tagjében meg kell adni a no1 számot,
 a <dest-account-number> tagjében meg kell adni a no2 számot, és a <amount> tagben meg kell adni 50-et
 Meg kell hívni a "listAccounts" operációt, az eredménybõl ki kell választani azt a <account> taget,
-melyben van egy gyermek <account-number> tag, aminek értéke a no1, és a <balance> tagben 150-nek kell szerepelnie.
+melyben van egy gyermek <account-number> tag, aminek értéke a no1, és a <balance> tagben 150-nek kell 
+szerepelnie.
 Ahol az <account-number> tag értéke no2, ott a <balance> tag értéke 50 legyen
 ```
 
