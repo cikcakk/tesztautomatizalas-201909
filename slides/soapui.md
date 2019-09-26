@@ -59,8 +59,8 @@ class: inverse, center, middle
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Catalog of books -->
-<c:catalog xmlns:c="http://training360.com/schemas/catalog"
-    xmlns:s="http://training360.com/schemas/stock">    
+<c:catalog xmlns:c="http://www.learnwebservices.com/schemas/catalog"
+    xmlns:s="http://www.learnwebservices.com/schemas/stock">    
     <c:book isbn10="1590597060">
         <c:title>Pro XML Development with Java Technology</c:title>        
         <s:stock>10</s:stock>
@@ -357,7 +357,7 @@ class: inverse, center, middle
     * Assert: contains, XPATH
     
 ```
-declare namespace l='http://training360.com/locations'
+declare namespace l='http://www.learnwebservices.com/locations'
 //l:location/l:name
 ```
 
@@ -385,7 +385,7 @@ declare namespace l='http://training360.com/locations'
 * Előző response-ból adat áthozatala következő requestbe
 
 ```
-declare namespace l='http://training360.com/locations'
+declare namespace l='http://www.learnwebservices.com/locations'
 //l:location/l:id
 
 //l:updateLocationRequest/l:id
