@@ -1,0 +1,113 @@
+{
+  "id": "a2128ab8-a49e-45dd-a15d-ca4bf0eb58e6",
+  "version": "2.0",
+  "name": "Locations",
+  "url": "http://www.learnwebservices.com/",
+  "tests": [{
+    "id": "2b2f8e2f-2a25-4cbe-b95f-5db7d969d5a8",
+    "name": "Create location",
+    "commands": [{
+      "id": "b4dce46a-1b75-47a5-a977-a546884fe618",
+      "comment": "",
+      "command": "open",
+      "target": "/locations/server",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b11304a-100e-49cd-a157-d3ac2fa90303",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 'Viczian_' + Date.now();",
+      "targets": [],
+      "value": "location_name"
+    }, {
+      "id": "09cbb6c6-f315-485d-8815-a2224d524982",
+      "comment": "",
+      "command": "echo",
+      "target": "${location_name}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9355d619-3bd8-46c6-8792-7fb50a6430a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=nameInput",
+      "targets": [
+        ["id=nameInput", "id"],
+        ["name=name", "name"],
+        ["css=#nameInput", "css:finder"],
+        ["xpath=//input[@id='nameInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69a12637-70a9-4c93-9e07-1f6608eaec49",
+      "comment": "",
+      "command": "type",
+      "target": "id=nameInput",
+      "targets": [
+        ["id=nameInput", "id"],
+        ["name=name", "name"],
+        ["css=#nameInput", "css:finder"],
+        ["xpath=//input[@id='nameInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${location_name}"
+    }, {
+      "id": "25eac3ac-5175-439e-a787-80d9335ea295",
+      "comment": "",
+      "command": "click",
+      "target": "id=coordsInput",
+      "targets": [
+        ["id=coordsInput", "id"],
+        ["name=coords", "name"],
+        ["css=#coordsInput", "css:finder"],
+        ["xpath=//input[@id='coordsInput']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3849739-dea5-494e-b04a-62d28a88fcf3",
+      "comment": "",
+      "command": "type",
+      "target": "id=coordsInput",
+      "targets": [
+        ["id=coordsInput", "id"],
+        ["name=coords", "name"],
+        ["css=#coordsInput", "css:finder"],
+        ["xpath=//input[@id='coordsInput']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "10,10"
+    }, {
+      "id": "597e2a22-27bd-471e-863c-43dbd6263d69",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6d3c356-92cf-4b1c-a176-43740e7d34e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//tr[td[contains(text(), '${location_name}')]]/td[3]",
+      "targets": [],
+      "value": "10.0,10.0"
+    }]
+  }],
+  "suites": [{
+    "id": "a3323b9b-9a86-4243-bd52-3ed6aba65462",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2b2f8e2f-2a25-4cbe-b95f-5db7d969d5a8"]
+  }],
+  "urls": ["http://www.learnwebservices.com/"],
+  "plugins": []
+}
