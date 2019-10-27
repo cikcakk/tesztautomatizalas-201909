@@ -2,12 +2,12 @@
 
 ## Postman
 
-*  (Tematika)[postman-tematika.md]
+*  [Tematika](postman-tematika.md)
 
 ## SoapUI
 
-*  (Tematika)[soapui-tematika.md]
+*  [Tematika](soapui-tematika.md)
 
 ## Selenium
 
-* (Tematika)[selenium-tematika.md]
+* [Tematika](selenium-tematika.md)
