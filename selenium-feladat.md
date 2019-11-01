@@ -6,7 +6,7 @@ Az első teszteset a hely felvételét teszteli. Mivel sok adat lehet már
 az adatbázisban, egyedi nevű helyet kell felvenni. Ehhez egy timestampet
 illesztünk a név végére, mely az egyediséget biztosítja.
 
-A nevet JavaScript-tel hozzuk létre, a következő utasítással:
+A nevet JavaScripttel hozzuk létre, a következő utasítással:
 
 ```javascript
 return 'Viczian_' + Date.now();
