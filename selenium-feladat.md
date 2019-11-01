@@ -1,78 +1,78 @@
 # Selenium IDE feladatok
 
-## Elsõ teszteset
+## ElsÅ‘ teszteset
 
-Az elsõ teszteset a hely felvételét teszteli. Mivel sok adat lehet már
-az adatbázisban, egyedi nevû helyet kell felvenni. Ehhez egy timestampet
-illesztünk a név végére, mely az egyediséget biztosítja.
+Az elsÅ‘ teszteset a hely felvÃ©telÃ©t teszteli. Mivel sok adat lehet mÃ¡r
+az adatbÃ¡zisban, egyedi nevÅ± helyet kell felvenni. Ehhez egy timestampet
+illesztÃ¼nk a nÃ©v vÃ©gÃ©re, mely az egyedisÃ©get biztosÃ­tja.
 
-A nevet JavaScript-tel hozzuk létre, a következõ utasítással:
+A nevet JavaScript-tel hozzuk lÃ©tre, a kÃ¶vetkezÅ‘ utasÃ­tÃ¡ssal:
 
 ```javascript
 return 'Viczian_' + Date.now();
 ```
 
-Ellenõrizni azt akarjuk, hogy megjelenik-e a táblázatban, és a megfelelõ
-koordináta szerepel-e mellette. Ehhez egy olyan xpath kifejezést kell írni,
-mely visszaadja azt a sort a táblázatban, amelyben a generált név szerepel,
-és abban kell venni a koordináta oszlopát. Az xpath kifejezés: `xpath=//tr[td[contains(text(), '${location_name}')]]/td[3]`
+EllenÅ‘rizni azt akarjuk, hogy megjelenik-e a tÃ¡blÃ¡zatban, Ã©s a megfelelÅ‘
+koordinÃ¡ta szerepel-e mellette. Ehhez egy olyan xpath kifejezÃ©st kell Ã­rni,
+mely visszaadja azt a sort a tÃ¡blÃ¡zatban, amelyben a generÃ¡lt nÃ©v szerepel,
+Ã©s abban kell venni a koordinÃ¡ta oszlopÃ¡t. Az xpath kifejezÃ©s: `xpath=//tr[td[contains(text(), '${location_name}')]]/td[3]`
 
-A teljes teszteset lépései:
+A teljes teszteset lÃ©pÃ©sei:
 
-* Böngészõ megnyitása a `/locations/server` címen
-* Név generálása: `Viczian_1572117939709`, ahol a szám egyedileg generált
-* Ûrlap kitöltése a névvel, és a `10,10` koordinátával, majd elküldése
-* Visszaellenõrizzük, hogy a koordináta `10.0,10.0` értékû-e (vigyázat, 
-  a felületen megjelenítve más a formátuma, mint amit be kell írni az ûrlapon)
+* BÃ¶ngÃ©szÅ‘ megnyitÃ¡sa a `/locations/server` cÃ­men
+* NÃ©v generÃ¡lÃ¡sa: `Viczian_1572117939709`, ahol a szÃ¡m egyedileg generÃ¡lt
+* Å°rlap kitÃ¶ltÃ©se a nÃ©vvel, Ã©s a `10,10` koordinÃ¡tÃ¡val, majd elkÃ¼ldÃ©se
+* VisszaellenÅ‘rizzÃ¼k, hogy a koordinÃ¡ta `10.0,10.0` Ã©rtÃ©kÅ±-e (vigyÃ¡zat, 
+  a felÃ¼leten megjelenÃ­tve mÃ¡s a formÃ¡tuma, mint amit be kell Ã­rni az Å±rlapon)
 
-Ellenõrizd, hogy lefut-e a teszteset! Lehet, hogy módosítanod kell, mert már nem a `Create location`
-az elsõ gomb.
+EllenÅ‘rizd, hogy lefut-e a teszteset! Lehet, hogy mÃ³dosÃ­tanod kell, mert mÃ¡r nem a `Create location`
+az elsÅ‘ gomb.
 
-Egészítsd ki úgy a tesztesetet, hogy ellenõrizze le azt is, hogy megjelenik-e a `Location has saved.` szöveg.
+EgÃ©szÃ­tsd ki Ãºgy a tesztesetet, hogy ellenÅ‘rizze le azt is, hogy megjelenik-e a `Location has saved.` szÃ¶veg.
 
-## Ellenõrzéssel kapcsolatos tesztesetek
+## EllenÅ‘rzÃ©ssel kapcsolatos tesztesetek
 
-Segítség: új tesztesetet felvenni a bal oldalon, a Tests lenyíló melletti `+` jellel lehetséges.
+SegÃ­tsÃ©g: Ãºj tesztesetet felvenni a bal oldalon, a Tests lenyÃ­lÃ³ melletti `+` jellel lehetsÃ©ges.
 
-* Írj olyan tesztesetet, mely azt ellenõrzi, hogy üres név esetén megjelenik-e a hibaüzenet!
-* Írj olyan tesztesetet, mely azt ellenõrzi, hogy üres koordináták esetén megjelenik-e a hibaüzenet!
-* Írj olyan tesztesetet, mely azt ellenõrzi, hogy helytelen formátumú koordináták esetén megjelenik-e a hibaüzenet!
-* Írj olyan tesztesetet, mely azt ellenõrzi, hogy túl alacsony, vagy túl magas érték esetén hibaüzenet jelenik-e meg! 
-Vigyázz, itt az alkalmazás (szándékosan :) tartalmaz egy hibát, amely rosszul ellenõrzi a koordinátákat. Találd meg!
+* Ãrj olyan tesztesetet, mely azt ellenÅ‘rzi, hogy Ã¼res nÃ©v esetÃ©n megjelenik-e a hibaÃ¼zenet!
+* Ãrj olyan tesztesetet, mely azt ellenÅ‘rzi, hogy Ã¼res koordinÃ¡tÃ¡k esetÃ©n megjelenik-e a hibaÃ¼zenet!
+* Ãrj olyan tesztesetet, mely azt ellenÅ‘rzi, hogy helytelen formÃ¡tumÃº koordinÃ¡tÃ¡k esetÃ©n megjelenik-e a hibaÃ¼zenet!
+* Ãrj olyan tesztesetet, mely azt ellenÅ‘rzi, hogy tÃºl alacsony, vagy tÃºl magas Ã©rtÃ©k esetÃ©n hibaÃ¼zenet jelenik-e meg! 
+VigyÃ¡zz, itt az alkalmazÃ¡s (szÃ¡ndÃ©kosan :) tartalmaz egy hibÃ¡t, amely rosszul ellenÅ‘rzi a koordinÃ¡tÃ¡kat. TalÃ¡ld meg!
 
-## Módosítással kapcsolatos tesztesetek
+## MÃ³dosÃ­tÃ¡ssal kapcsolatos tesztesetek
 
-Írj egy olyan tesztesetet, mely a módosítást teszteli.
+Ãrj egy olyan tesztesetet, mely a mÃ³dosÃ­tÃ¡st teszteli.
 
-* Új név generálása
-* Ûrlap kitöltése, majd elküldése
-* Klikkeljen rá az `Edit` gombra (segítség: itt is egy xpath kell, az elõzõ annyival több, hogy nem a `td[3]`, amit ki kell keresni, hanem egy nagyobb indexû oszlop, és ebben van egy `a` tag, ami a link maga)
-* Módosítsa a nevet egy új generált névre (ehhez vegyél fel egy új változót)
-* Mentse el az ûrlapot
-* Ellenõrizze, hogy megjelenik-e a `Location has updated.` felirat
-* Ellenõrizze, hogy a táblázatban megjelenik-e az új név
+* Ãšj nÃ©v generÃ¡lÃ¡sa
+* Å°rlap kitÃ¶ltÃ©se, majd elkÃ¼ldÃ©se
+* Klikkeljen rÃ¡ az `Edit` gombra (segÃ­tsÃ©g: itt is egy xpath kell, az elÅ‘zÅ‘ annyival tÃ¶bb, hogy nem a `td[3]`, amit ki kell keresni, hanem egy nagyobb indexÅ± oszlop, Ã©s ebben van egy `a` tag, ami a link maga)
+* MÃ³dosÃ­tsa a nevet egy Ãºj generÃ¡lt nÃ©vre (ehhez vegyÃ©l fel egy Ãºj vÃ¡ltozÃ³t)
+* Mentse el az Å±rlapot
+* EllenÅ‘rizze, hogy megjelenik-e a `Location has updated.` felirat
+* EllenÅ‘rizze, hogy a tÃ¡blÃ¡zatban megjelenik-e az Ãºj nÃ©v
 
-Írj egy tesztesetet a módosításnál is az ûrlap ellenõrzésére (pl. helytelen név)!
+Ãrj egy tesztesetet a mÃ³dosÃ­tÃ¡snÃ¡l is az Å±rlap ellenÅ‘rzÃ©sÃ©re (pl. helytelen nÃ©v)!
 
-## Törléssel kapcsolatos tesztesetek
+## TÃ¶rlÃ©ssel kapcsolatos tesztesetek
 
-Mint a módosításnál, csak azzal a különbséggel, hogy azt kell ellenõrizni, hogy a táblázatból eltûnik a megfelelõ hely.
-A `Location has deleted.` üzenetre is ellenõrizz rá! 
+Mint a mÃ³dosÃ­tÃ¡snÃ¡l, csak azzal a kÃ¼lÃ¶nbsÃ©ggel, hogy azt kell ellenÅ‘rizni, hogy a tÃ¡blÃ¡zatbÃ³l eltÅ±nik a megfelelÅ‘ hely.
+A `Location has deleted.` Ã¼zenetre is ellenÅ‘rizz rÃ¡! 
 
-Ehhez a `assert element not present` parancsot használd! Tégy ellenpróbát is, azaz mikor nem kerül törlésre a hely (pl. a törlésre klikkelést
-megjegyzésbe teszted), elbukik a teszt.
+Ehhez a `assert element not present` parancsot hasznÃ¡ld! TÃ©gy ellenprÃ³bÃ¡t is, azaz mikor nem kerÃ¼l tÃ¶rlÃ©sre a hely (pl. a tÃ¶rlÃ©sre klikkelÃ©st
+megjegyzÃ©sbe teszted), elbukik a teszt.
 
-Figyeld meg, hogy a felugró ablakra milyen paranccsal válaszol a Selenium?
+Figyeld meg, hogy a felugrÃ³ ablakra milyen paranccsal vÃ¡laszol a Selenium?
 
-## Nagyon nagyon nehéz feladat
+## Nagyon nagyon nehÃ©z feladat
 
-Olvasd vissza az azonosítót, amely a név mellett megjelenik, tárold el egy változóban, és azzal kérdezd le a sort,
-és látnod kell, hogy törlés után már nincs ilyen. (Ugyanezt módosítsd a módosításnál is, hogy azonosító alapján keresse vissza!)
+Olvasd vissza az azonosÃ­tÃ³t, amely a nÃ©v mellett megjelenik, tÃ¡rold el egy vÃ¡ltozÃ³ban, Ã©s azzal kÃ©rdezd le a sort,
+Ã©s lÃ¡tnod kell, hogy tÃ¶rlÃ©s utÃ¡n mÃ¡r nincs ilyen. (Ugyanezt mÃ³dosÃ­tsd a mÃ³dosÃ­tÃ¡snÃ¡l is, hogy azonosÃ­tÃ³ alapjÃ¡n keresse vissza!)
 
-Az azonosítot a következõképpen kell visszaolvasni, majd utána kiírni logba az ellenõrzéshez: 
+Az azonosÃ­tot a kÃ¶vetkezÅ‘kÃ©ppen kell visszaolvasni, majd utÃ¡na kiÃ­rni logba az ellenÅ‘rzÃ©shez: 
 
 ```
-store text | xpath=<<xpath kifejezés>> | <<változó neve>>
+store text | xpath=<<xpath kifejezÃ©s>> | <<vÃ¡ltozÃ³ neve>>
 
 azaz pl.
 

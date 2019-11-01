@@ -1,10 +1,10 @@
 # Selenium tematika
 
-A tanfolyam célja, a webalkalmazások architektúrájának megismerése, Selenium IDE és WebDriver tesztesetek írása, ez utóbbi Python programozási nyelven.
-A tanfolyam érdekessége, hogy párhuzamosan mutatja be a programozási alapfogalmakat Python nyelven, de párhuzamosan a HTML nyelvet és a Selenium WebDrivert is, 
-így a programozási feladatok automatizált tesztesetek írása, mely valós webes alkalmazásokat tesztelnek, és nem absztrakt feladatok.
+A tanfolyam cÃ©lja, a webalkalmazÃ¡sok architektÃºrÃ¡jÃ¡nak megismerÃ©se, Selenium IDE Ã©s WebDriver tesztesetek Ã­rÃ¡sa, ez utÃ³bbi Python programozÃ¡si nyelven.
+A tanfolyam Ã©rdekessÃ©ge, hogy pÃ¡rhuzamosan mutatja be a programozÃ¡si alapfogalmakat Python nyelven, de pÃ¡rhuzamosan a HTML nyelvet Ã©s a Selenium WebDrivert is, 
+Ã­gy a programozÃ¡si feladatok automatizÃ¡lt tesztesetek Ã­rÃ¡sa, mely valÃ³s webes alkalmazÃ¡sokat tesztelnek, Ã©s nem absztrakt feladatok.
 
-Telepítendõ szoftverek:
+TelepÃ­tendÅ‘ szoftverek:
 
 * Chrome
 * Selenium IDE Chrome plugin
@@ -12,67 +12,67 @@ Telepítendõ szoftverek:
 * PyCharm
 * MariaDB, HeidiSQL
 
-# Elsõ alkalom - Webes alkalmazások architektúrája, HTML és Selenium IDE
+# ElsÅ‘ alkalom - Webes alkalmazÃ¡sok architektÃºrÃ¡ja, HTML Ã©s Selenium IDE
 
 ## Webes fogalmak, HTML
 
-* Webes alkalmazások felépítése (ismétlés)
-* URL/HTTP protokoll (ismétlés)
+* Webes alkalmazÃ¡sok felÃ©pÃ­tÃ©se (ismÃ©tlÃ©s)
+* URL/HTTP protokoll (ismÃ©tlÃ©s)
 * HTML, CSS
-* HTML formátum alapvetõ felépítése: html, body, head, title, h1, p, a, img, div, span, link (CSS)
-* Karakterkódolás
-* DOM, navigálás XPath-szal a DOM-ban
-* Ûrlapok: form, input, submit, button
-* Cache-elés
+* HTML formÃ¡tum alapvetÅ‘ felÃ©pÃ­tÃ©se: html, body, head, title, h1, p, a, img, div, span, link (CSS)
+* KarakterkÃ³dolÃ¡s
+* DOM, navigÃ¡lÃ¡s XPath-szal a DOM-ban
+* Å°rlapok: form, input, submit, button
+* Cache-elÃ©s
 * Cookie, Session
 * Redirect after post
 
 ## Selenium IDE
 
-* Selenium platform bemutatása
+* Selenium platform bemutatÃ¡sa
 * Selenium IDE
-* Projektek, tesztesetek, suite-ok kezelése
-* Felvétel, visszajátszás, debug
+* Projektek, tesztesetek, suite-ok kezelÃ©se
+* FelvÃ©tel, visszajÃ¡tszÃ¡s, debug
 * Gyakori parancsok: open, type, click, assert, verify
-* Lokátorok: id, name, link, CSS, XPath
-* Változók használata Selenium IDE-ben (saját definiálása, XPath kifejezés értékének tárolása változóban), echo
+* LokÃ¡torok: id, name, link, CSS, XPath
+* VÃ¡ltozÃ³k hasznÃ¡lata Selenium IDE-ben (sajÃ¡t definiÃ¡lÃ¡sa, XPath kifejezÃ©s Ã©rtÃ©kÃ©nek tÃ¡rolÃ¡sa vÃ¡ltozÃ³ban), echo
 
-# Második alkalom - Selenium WebDriver és Python nyelvi alapok
+# MÃ¡sodik alkalom - Selenium WebDriver Ã©s Python nyelvi alapok
 
 ## Webes fogalmak, RIA, JavaScript, AJAX
 
-* Folyamatos GitHub használat.
-* Saját oldal felépítése és GitHubon publikálása
+* Folyamatos GitHub hasznÃ¡lat.
+* SajÃ¡t oldal felÃ©pÃ­tÃ©se Ã©s GitHubon publikÃ¡lÃ¡sa
 * JavaScript fogalma
 * AJAX
 
 ## Selenium IDE
 
-* JavaScript meghívása 
-* DRY - másik teszteset meghívása, változó átadása
+* JavaScript meghÃ­vÃ¡sa 
+* DRY - mÃ¡sik teszteset meghÃ­vÃ¡sa, vÃ¡ltozÃ³ Ã¡tadÃ¡sa
 * Selenium IDE control flow (ciklus)
-* AJAX kezelése Selenium IDE-bõl, wait for
+* AJAX kezelÃ©se Selenium IDE-bÅ‘l, wait for
 
 ## Selenium WebDriver
 
-* Selenium IDE exportálás
-* Webdriver létrehozása (indítás különbözõ böngészõkkel), lezárása
-* Oldal megnyitása
-* DOM elemek lekérése, lokátorok
-* Linkre kattintás
-* Szöveges mezõk kitörlése és kitöltése
-* Gombok kezelése
-* Ûrlap elküldése
-* Szöveg, attribútum, CSS ellenõrzése
+* Selenium IDE exportÃ¡lÃ¡s
+* Webdriver lÃ©trehozÃ¡sa (indÃ­tÃ¡s kÃ¼lÃ¶nbÃ¶zÅ‘ bÃ¶ngÃ©szÅ‘kkel), lezÃ¡rÃ¡sa
+* Oldal megnyitÃ¡sa
+* DOM elemek lekÃ©rÃ©se, lokÃ¡torok
+* Linkre kattintÃ¡s
+* SzÃ¶veges mezÅ‘k kitÃ¶rlÃ©se Ã©s kitÃ¶ltÃ©se
+* Gombok kezelÃ©se
+* Å°rlap elkÃ¼ldÃ©se
+* SzÃ¶veg, attribÃºtum, CSS ellenÅ‘rzÃ©se
 
 ## Python
 
-* PyCharm használatba vétele, Python projekt felépítése
-* Interpreter, szemantika, szintaktika, kulcsszó
-* Literálok (egész, lebegõpontos, szöveges, logikai)
-* Típus, típuskonverzió
-* Megjegyzések
-* Változók használata, értékadás operátor
-* Kiírás
-* Böngészõ megnyitása, objektum, példányosítás, függvényhívás
+* PyCharm hasznÃ¡latba vÃ©tele, Python projekt felÃ©pÃ­tÃ©se
+* Interpreter, szemantika, szintaktika, kulcsszÃ³
+* LiterÃ¡lok (egÃ©sz, lebegÅ‘pontos, szÃ¶veges, logikai)
+* TÃ­pus, tÃ­puskonverziÃ³
+* MegjegyzÃ©sek
+* VÃ¡ltozÃ³k hasznÃ¡lata, Ã©rtÃ©kadÃ¡s operÃ¡tor
+* KiÃ­rÃ¡s
+* BÃ¶ngÃ©szÅ‘ megnyitÃ¡sa, objektum, pÃ©ldÃ¡nyosÃ­tÃ¡s, fÃ¼ggvÃ©nyhÃ­vÃ¡s
 * Pytest, Assert

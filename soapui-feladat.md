@@ -1,56 +1,56 @@
-# SOAP webszolgáltatások és SoapUI gyakorlati feladatok
+# SOAP webszolgÃ¡ltatÃ¡sok Ã©s SoapUI gyakorlati feladatok
 
 ## Celsius to Fahrenheit converter
 
-A http://www.learnwebservices.com/ oldalon megtalálható egy webszolgáltatás,
-mely képes celsius és fahernheit között váltani.
-A WSDL dokumentuma megtalálható a http://www.learnwebservices.com/services/tempconverter?wsdl címen.
+A http://www.learnwebservices.com/ oldalon megtalÃ¡lhatÃ³ egy webszolgÃ¡ltatÃ¡s,
+mely kÃ©pes celsius Ã©s fahernheit kÃ¶zÃ¶tt vÃ¡ltani.
+A WSDL dokumentuma megtalÃ¡lhatÃ³ a http://www.learnwebservices.com/services/tempconverter?wsdl cÃ­men.
 
-Térképezd fel, hogy a webszolgáltatás hány operációt tartalmaz! Mindegyik operációra írj legalább egy
-tesztesetet! Próbálkozz boundary-value analysis-szel is!
+TÃ©rkÃ©pezd fel, hogy a webszolgÃ¡ltatÃ¡s hÃ¡ny operÃ¡ciÃ³t tartalmaz! Mindegyik operÃ¡ciÃ³ra Ã­rj legalÃ¡bb egy
+tesztesetet! PrÃ³bÃ¡lkozz boundary-value analysis-szel is!
 
-## Locations alkalmazás
+## Locations alkalmazÃ¡s
 
-A http://www.learnwebservices.com/locations/ címen megtalálható egy kedvenc
-helyeket nyilvántartó alkalmazás. Ez nyújt SOAP webszolgáltatás API-t,
-mely WSDL dokumentuma megtalálható a http://www.learnwebservices.com/locations/services/locations?wsdl
-címen.
+A http://www.learnwebservices.com/locations/ cÃ­men megtalÃ¡lhatÃ³ egy kedvenc
+helyeket nyilvÃ¡ntartÃ³ alkalmazÃ¡s. Ez nyÃºjt SOAP webszolgÃ¡ltatÃ¡s API-t,
+mely WSDL dokumentuma megtalÃ¡lhatÃ³ a http://www.learnwebservices.com/locations/services/locations?wsdl
+cÃ­men.
 
-Ez tipikusan megvalósítja a CRUD mûveleteket, írj mind a négy mûvelethez (listázás, létrehozás,
-módosítás, törlés) teszteseteket! Gondolj azokra az ágakra is, amikor helytelen adatot adunk meg!
-(Pl. üres, túl kicsi vagy túl nagy szám.)
-Egy lépésbõl álló tesztesetek esetén csak a létrehozáshoz tudunk korrekt tesztesetet létrehozni,
-hiszen a listázáshoz elõfeltétel, hogy az alkalmazás egy adott állapotban legyen. Ugyanígy
-a módosításnál és a törlésnél is léteznie kell azzal az azonosítóval, ami alapján módosítani vagy
-törölni akarunk.
+Ez tipikusan megvalÃ³sÃ­tja a CRUD mÅ±veleteket, Ã­rj mind a nÃ©gy mÅ±velethez (listÃ¡zÃ¡s, lÃ©trehozÃ¡s,
+mÃ³dosÃ­tÃ¡s, tÃ¶rlÃ©s) teszteseteket! Gondolj azokra az Ã¡gakra is, amikor helytelen adatot adunk meg!
+(Pl. Ã¼res, tÃºl kicsi vagy tÃºl nagy szÃ¡m.)
+Egy lÃ©pÃ©sbÅ‘l Ã¡llÃ³ tesztesetek esetÃ©n csak a lÃ©trehozÃ¡shoz tudunk korrekt tesztesetet lÃ©trehozni,
+hiszen a listÃ¡zÃ¡shoz elÅ‘feltÃ©tel, hogy az alkalmazÃ¡s egy adott Ã¡llapotban legyen. UgyanÃ­gy
+a mÃ³dosÃ­tÃ¡snÃ¡l Ã©s a tÃ¶rlÃ©snÃ©l is lÃ©teznie kell azzal az azonosÃ­tÃ³val, ami alapjÃ¡n mÃ³dosÃ­tani vagy
+tÃ¶rÃ¶lni akarunk.
 
-Tervezz meg a listázásra, módosításra és törlésre is több lépésbõl álló teszteseteket
-(csak írd le). Láttuk, hogy a Postman esetén az egyik kérésbõl kellett adatot átvinni a másik
-kérésbe. Írd le szövegesen, hogy honnan kell adatot kiolvasni, és hová kell beilleszteni.
-(Emlékezz vissza, Postman esetén a JSON válaszból kellett kiolvasni az azonosítót, és 
-át kellett vinni a következõ kérés URL-jébe!)
+Tervezz meg a listÃ¡zÃ¡sra, mÃ³dosÃ­tÃ¡sra Ã©s tÃ¶rlÃ©sre is tÃ¶bb lÃ©pÃ©sbÅ‘l Ã¡llÃ³ teszteseteket
+(csak Ã­rd le). LÃ¡ttuk, hogy a Postman esetÃ©n az egyik kÃ©rÃ©sbÅ‘l kellett adatot Ã¡tvinni a mÃ¡sik
+kÃ©rÃ©sbe. Ãrd le szÃ¶vegesen, hogy honnan kell adatot kiolvasni, Ã©s hovÃ¡ kell beilleszteni.
+(EmlÃ©kezz vissza, Postman esetÃ©n a JSON vÃ¡laszbÃ³l kellett kiolvasni az azonosÃ­tÃ³t, Ã©s 
+Ã¡t kellett vinni a kÃ¶vetkezÅ‘ kÃ©rÃ©s URL-jÃ©be!)
 
-Példa a következõ egy másik fiktív banki rendszer esetén, ami egy átutalást tesztelne.
-Létrehozunk két számlát, az elsõre utalunk 200 egységet, majd az elsõrõl átutalunk 50 egységet a másodikra.
-Azt kell ellenõrizni, hogy a számlákat listázva az elsõn 150, a másodikon 50 egység lesz.
+PÃ©lda a kÃ¶vetkezÅ‘ egy mÃ¡sik fiktÃ­v banki rendszer esetÃ©n, ami egy Ã¡tutalÃ¡st tesztelne.
+LÃ©trehozunk kÃ©t szÃ¡mlÃ¡t, az elsÅ‘re utalunk 200 egysÃ©get, majd az elsÅ‘rÅ‘l Ã¡tutalunk 50 egysÃ©get a mÃ¡sodikra.
+Azt kell ellenÅ‘rizni, hogy a szÃ¡mlÃ¡kat listÃ¡zva az elsÅ‘n 150, a mÃ¡sodikon 50 egysÃ©g lesz.
 
 ```
-Teszt lépések:
+Teszt lÃ©pÃ©sek:
 
-Meg kell hívni a "createAccount" operációt, aminek hatására a válaszban a <account-number> tagen belül
-megjelenik a létrehozott bankszámlaszám (legyen ez a no1)
-Meg kell hívni a "createAccount" operációt még egyszer, aminek hatására a válaszban a <account-number> 
-tagen belül megjelenik a létrehozott bankszámlaszám (legyen ez a no2)
-Meg kell hívni a "deposit" operációt, aminek az <dest-account-number> tagjében meg kell adni a no1 számot,
-valamint legyen az összeg 200 egység
+Meg kell hÃ­vni a "createAccount" operÃ¡ciÃ³t, aminek hatÃ¡sÃ¡ra a vÃ¡laszban a <account-number> tagen belÃ¼l
+megjelenik a lÃ©trehozott bankszÃ¡mlaszÃ¡m (legyen ez a no1)
+Meg kell hÃ­vni a "createAccount" operÃ¡ciÃ³t mÃ©g egyszer, aminek hatÃ¡sÃ¡ra a vÃ¡laszban a <account-number> 
+tagen belÃ¼l megjelenik a lÃ©trehozott bankszÃ¡mlaszÃ¡m (legyen ez a no2)
+Meg kell hÃ­vni a "deposit" operÃ¡ciÃ³t, aminek az <dest-account-number> tagjÃ©ben meg kell adni a no1 szÃ¡mot,
+valamint legyen az Ã¶sszeg 200 egysÃ©g
 
-Elvárt eredmény:
+ElvÃ¡rt eredmÃ©ny:
 
-Meg kell hívni a "transfer" operációt, aminek az <src-account-number> tagjében meg kell adni a no1 számot,
-a <dest-account-number> tagjében meg kell adni a no2 számot, és a <amount> tagben meg kell adni 50-et
-Meg kell hívni a "listAccounts" operációt, az eredménybõl ki kell választani azt a <account> taget,
-melyben van egy gyermek <account-number> tag, aminek értéke a no1, és a <balance> tagben 150-nek kell 
+Meg kell hÃ­vni a "transfer" operÃ¡ciÃ³t, aminek az <src-account-number> tagjÃ©ben meg kell adni a no1 szÃ¡mot,
+a <dest-account-number> tagjÃ©ben meg kell adni a no2 szÃ¡mot, Ã©s a <amount> tagben meg kell adni 50-et
+Meg kell hÃ­vni a "listAccounts" operÃ¡ciÃ³t, az eredmÃ©nybÅ‘l ki kell vÃ¡lasztani azt a <account> taget,
+melyben van egy gyermek <account-number> tag, aminek Ã©rtÃ©ke a no1, Ã©s a <balance> tagben 150-nek kell 
 szerepelnie.
-Ahol az <account-number> tag értéke no2, ott a <balance> tag értéke 50 legyen
+Ahol az <account-number> tag Ã©rtÃ©ke no2, ott a <balance> tag Ã©rtÃ©ke 50 legyen
 ```
 
