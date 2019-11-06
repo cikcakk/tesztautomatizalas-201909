@@ -38,3 +38,11 @@ class TestCreatelocation():
     self.driver.find_element(By.CSS_SELECTOR, ".btn-primary").click()
     assert self.driver.find_element(By.CSS_SELECTOR, ".alert").text == "Location has saved"
 ```
+
+```
+venv
+.pytest_cache
+*.log
+.idea
+*.iml
+```
