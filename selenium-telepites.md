@@ -61,6 +61,13 @@ print("Hello Python!")
 Futtasd le a programot, jobb egérgombbal, majd _Run 'hello'_. A _Ctrl + Shift + F10_
 is működik.
 
+### Betűméret növelése
+
+A _File > Settings_ menüponton belül rá kell keresni a bal felső keresőmezőben a 
+`Zoom` szövegre, és kiválasztani a _Editor > General_ menüt, és ott be kell
+betenni a _Change font size (Zoom) with Ctrl + Mouse Wheel_ pipát. Ennek hatására
+a szerkesztőablakban Ctrl + görgő segítségével növelhető/csökkenthető a betűméret.
+
 ## Driver letöltése és kicsomagolása
 
 Chrome esetén a ChromeDrivert tölts le a https://chromedriver.chromium.org/
