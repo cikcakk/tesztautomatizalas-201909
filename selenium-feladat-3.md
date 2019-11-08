@@ -10,7 +10,7 @@ Készíts egy HTML oldalt `triangles.html` néven, melyen van egy cím, kis szö
 és három beviteli mező, amiben a háromszög oldalait lehet megadni!
 A mező azonosítók rendre legyenek `a-input`, `b-input`, `c-input`. A
 mezők egymás alatt jelenjenek meg. Mindegyiknek legyen egy címkéje!
-(Járj utána hogy kell használni a `<label>` taget!
+(Járj utána hogy kell használni a `<label>` taget!)
 
 Mindegyik beviteli mezőnek egy pixel széles kerete legyen, és mikor a felhasználó
 ráklikkel, akkor változzon a színe és a vastagsága! (CSS, keresés Google-lel!)
@@ -73,7 +73,6 @@ window.onload = function() {
         let a = document.getElementById("a-input").value;
         let b = document.getElementById("b-input").value;
         let c = document.getElementById("c-input").value;
-        console.log(a);
 
         let result = document.getElementById("result-ul");
 
