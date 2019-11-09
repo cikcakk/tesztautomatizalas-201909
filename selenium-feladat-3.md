@@ -123,6 +123,7 @@ A https://httpstatusdogs.com/ oldalon `<div>`-et kell keresni, és arról kész�
 Írj egy programot `fcconverter.py` néven, mely bekér egy számot, ez a hőmérséklet Celsiusban,
 majd átváltja Fahrenheitba.
 
-Nem kell az algoritmust Pythonban leprogramozni (azt majd később!), hanem a program menjen el
+Nem kell az algoritmust Pythonban leprogramozni (azt majd később!), hanem a program kérje be konzolban a számot (`input`),
+menjen el
 a https://www.convertworld.com/hu/homerseklet/fahrenheit.html oldalra, írja be a számot,
 és keresse ki az eredményt, és írja ki a konzolra (`print`)!
