@@ -82,6 +82,7 @@ window.onload = function() {
         let result = document.getElementById("result-ul");
 
         result.innerHTML += "<li>" + "a = " + a + ", b = " + b + ", c = " + c + ": " + classify(a, b, c) + "</li>";
+        return false;
     }
 };
 ```
@@ -125,5 +126,5 @@ majd átváltja Fahrenheitba.
 
 Nem kell az algoritmust Pythonban leprogramozni (azt majd később!), hanem a program kérje be konzolban a számot (`input`),
 menjen el
-a https://www.convertworld.com/hu/homerseklet/fahrenheit.html oldalra, írja be a számot,
+a https://www.convertworld.com/hu/homerseklet/celsius.html oldalra, írja be a számot,
 és keresse ki az eredményt, és írja ki a konzolra (`print`)!
