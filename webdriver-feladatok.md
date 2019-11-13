@@ -40,7 +40,7 @@ címet használd.
 * Keresd ki a 9876 azonosítójú település nevét, majd írd ki az első három karakterét!
 * Keresd ki a 9898 azonosítójú település nevét, majd írd ki visszafele!
 * Keresd ki a 9742 azonosítójú település nevét, majd írd ki a hosszát, hogy hány karakterből áll!
-* Keresd ki a 11115 azonosítójú település nevét, majd írd ki a csupa nagy és csupa kisbetűvel, hogy hány karakterből áll!
+* Keresd ki a 11115 azonosítójú település nevét, majd írd ki a csupa nagy és csupa kisbetűvel!
 * Keresd ki a 11116, 11117, 11118 azonosítójú település nevét, majd írd ki egymástól kötőjelekkel elválasztva!
 * Írd ki Tolmács koordinátáit, de space-szel elválasztva, és tizedespont helyett tizedes vesszővel!
 * Keresd ki a Tiszakerecseny és Tiszarád koordinátáit! Add értékül négy lebegőpontos változóval!
