@@ -43,8 +43,8 @@ címet használd.
 * Keresd ki a 11115 azonosítójú település nevét, majd írd ki a csupa nagy és csupa kisbetűvel!
 * Keresd ki a 11116, 11117, 11118 azonosítójú település nevét, majd írd ki egymástól kötőjelekkel elválasztva!
 * Írd ki Tolmács koordinátáit, de space-szel elválasztva, és tizedespont helyett tizedes vesszővel!
-* Keresd ki a Tiszakerecseny és Tiszarád koordinátáit! Add értékül négy lebegőpontos változóval!
-* Az előző két településnek vond ki egymásből a szélességi és hosszúsági koordinátáit!
+* Keresd ki a Tiszakerecseny és Tiszarád koordinátáit! Add értékül négy lebegőpontos változónak!
+* Az előző két településnek vond ki egymásból a szélességi és hosszúsági koordinátáit!
 * Írd ki, hogy a 11262 azonosítójú településben szerepel-e a `margit` szó (`True` vagy `False`!
 * Bónusz: számold ki a két település távolságát km-ben!
 
