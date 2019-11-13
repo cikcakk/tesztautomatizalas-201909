@@ -54,6 +54,11 @@ címet használd.
 * Írj egy függvényt, ami paraméterül kap egy nevet, és visszaadja a település koordinátáját!
 * Írj egy függvényt, mely paraméterül kap egy azonosítót, és kikeresi a nevet!
 * Írj egy függvényt, mely paraméterül kap egy azonosítót, és kikeresi a koordinátáját!
+* Írj egy függvényt, mely a paraméterül kapott értékekkel (név, koordináta kitölti az űrlapot, és felvesz egy kedvenc helyet! 
+* Módosítsd a előző függvényt, hogy három paramétere legyen, külön keljen megadni a lat és lon értékeket!
+* Legyen default értéke a koordinátáknak (`47.21283333` és `16.8435`)!
+* Írj egy függvény, mely a megadott id-jú helyet módosítja a paraméterként megadott értékekre!
+
 
 ## HTML komponensek
 
