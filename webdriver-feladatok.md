@@ -14,7 +14,7 @@ címet használd.
 
 ### Feladat
 
-* A Locations alkalmazásban olvasd be Dobogókő koordinátáját! Milyen a típusa?
+* A Locations alkalmazásban olvasd be Dobogókő koordinátáját! Írd ki a típusát?
 * A Locations alkalmazásban olvasd be Alattyán azonosítóját! Írd ki a típusát!
 * A Locations alkalmazásban olvasd be a 9277 azonosítójú település nevét! Írd ki a típusát!
 
@@ -23,7 +23,7 @@ címet használd.
 * `int()`, `float()`, `str()`
 
 * Próbáld meg Bakonybánk azonosítóját egész számmá konvertálni, és írd ki a változó típusát!
-* Próbáld meg Zsámbék koordinátáját egész számmá konvertálni, és írd ki a változó típusát!
+* Próbáld meg Zsámbék koordinátáját lebegőpontos számmá konvertálni! Mi történik?
 
 ## Műveletek
 
