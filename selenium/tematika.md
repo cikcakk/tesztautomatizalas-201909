@@ -20,7 +20,6 @@ Telepítendő szoftverek:
 * URL/HTTP protokoll (ismétlés)
 * HTML, CSS
 * HTML formátum alapvető felépítése: html, body, head, title, h1, p, a, img, div, span, link (CSS)
-* Karakterkódolás
 * DOM, navigálás XPath-szal a DOM-ban
 * Űrlapok: form, input, submit, button
 * Cache-elés
@@ -39,19 +38,12 @@ Telepítendő szoftverek:
 
 # Második alkalom - Selenium WebDriver és Python nyelvi alapok
 
-## Webes fogalmak, RIA, JavaScript, AJAX
-
-* Folyamatos GitHub használat.
-* Saját oldal felépítése és GitHubon publikálása
-* JavaScript fogalma
-* AJAX
-
 ## Selenium IDE
 
 * JavaScript meghívása 
 * DRY - másik teszteset meghívása, változó átadása
-* Selenium IDE control flow (ciklus)
-* AJAX kezelése Selenium IDE-ből, wait for
+* Selenium IDE control flow (ciklus, feltétel)
+
 
 ## Selenium WebDriver
 
@@ -68,11 +60,43 @@ Telepítendő szoftverek:
 ## Python
 
 * PyCharm használatba vétele, Python projekt felépítése
-* Interpreter, szemantika, szintaktika, kulcsszó
-* Literálok (egész, lebegőpontos, szöveges, logikai)
-* Típus, típuskonverzió
-* Megjegyzések
-* Változók használata, értékadás operátor
+* Debug PyCharmban
+* Érték beolvasása
 * Kiírás
-* Böngésző megnyitása, objektum, példányosítás, függvényhívás
+* Böngésző megnyitása
 * Pytest, Assert
+
+# Harmadik alkalom - Saját weboldal és Selenium WebDriver tesztelése
+
+* Git
+
+## Web
+
+* Weboldal felépítése
+* Saját weboldal létrehozása és publikálása
+* JavaScript fogalma
+
+## Selenium WebDriver
+
+* Saját weboldal tesztelése
+
+# Negyedik alkalom - Selenium WebDriver és Python nyelvi alapok
+
+## Selenium WebDriver
+
+* WebDriver hívások részletes magyarázata
+
+## Python
+
+* A nyelv alapjai
+* Szintaktika, szemantika
+* Megjegyzések
+* Változó, típus
+* Kulcsszavak
+* `int()`, `float()`, `str()`
+* Operátor, operandus, precedencia
+* String függvények
+* String szeletelés
+* `in` operátor használata
+* Saját függvények készítése, paraméter, visszatérési érték, alapértelmezett
+  paramtéter értékek
