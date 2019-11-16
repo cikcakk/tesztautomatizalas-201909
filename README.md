@@ -29,3 +29,4 @@ Ez a repository tartalmazza a tesztautomatizálás tanfolyam anyagát.
 * [Második házi Selenium IDE-vel](selenium/ide-feladat-02.md)
 * [WebDriver órai feladatok](selenium/webdriver-orai.md)
 * [Első házi Selenium WebDriverrel](selenium/webdriver-feladat-01.md)
+* [Második házi Selenium WebDriverrel](selenium/webdriver-feladat-02.md)
