@@ -24,7 +24,7 @@ megnyomni a _Search_ gombot.
 alkalmazottat kitörli!
 * Írj egy olyan függvényt, mely a paraméterként kapott nevű
 alkalmazottat kitörli!
-* Írj egy olyan függvényt, mely kiírja, hogy hány alkalmazott van!
+* (Nem kell megoldani, még nem tanultuk!) Írj egy olyan függvényt, mely kiírja, hogy hány alkalmazott van!
 * Írj egy függvényt, ami magyarra vált, és egy másik függvényt, amely angolra
 vált!
 * Írj egy függvényt, mely kap egy paramétert, ez lesz az alkalmazott neve!
