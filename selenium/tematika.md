@@ -100,3 +100,18 @@ Telepítendő szoftverek:
 * `in` operátor használata
 * Saját függvények készítése, paraméter, visszatérési érték, alapértelmezett
   paramtéter értékek
+
+# Ötödik alkalom - Függvények és AJAX
+
+## Webes fogalmak
+
+* AJAX ismétlés
+
+## Selenium WebDriver
+
+* AJAX kezelése
+
+## Python
+
+* Függvények ismétlése: paraméterátadás, visszatérési érték
+* Függvényhívás, függvény hívása függvényből, láncolt függvényhívás
