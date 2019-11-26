@@ -46,11 +46,18 @@ függvényt üres névvel, majd várj a megfelelő hibaüzenetre!
 Így kell WebDriverben ráklikkelni a confirmation dialogra:
 
 ```python
-Alert alert = driver.switchTo().alert();
-alert.accept(); // for OK
+driver.switch_to.alert.accept()
 ```
 
 Írj egy függvényt, mely arra vár, hogy a megadott nevű hely eltűnjön a táblázatból.
+Az eltűnést úgy kell implementálni, hogy a megjelenés ellenkezőjére vársz használva
+az `until_not` függvényt.
+
+```python
+WebDriverWait(driver, 10).until_not(
+  expected_conditions.presence_of_element_located((By.XPATH, xpath))
+)
+```
 
 Írj egy függvényt, mely a törlést teszteli! Először felvesz egyet,
 majd törli, majd bevárja a sikeres törlés üzenetetét, és azt, hogy a
