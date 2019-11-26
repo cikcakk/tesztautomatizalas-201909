@@ -60,45 +60,26 @@ címet használd.
 * Írj egy függvényt, mely a megadott id-jú helyet módosítja a paraméterként megadott értékekre!
 
 
-## HTML komponensek
-
-* Label
-* Textarea
-* Password
-* Checkbox
-* Hidden
-* Reset
-
-* Készíts el egy kedvenc hely létrehozása űrlapot!
-* Minden űrlap mezőnek legyen címkéje!
-* Lehessen megadni egy több soros hosszú leírást!
-* Lehessen megadni egy jelszót, amivel lehet igazolni, hogy ott voltál a helyszínen!
-* Be lehessen pipálni, hogy a hely publikus-e. Valamint egy másik, hogy ingyenes-e!
-* Rejtett mező legyen, hogy mi a kitöltés helye, jelen esetben legyen beégetve, hogy `webes-urlap`
-* Lehessen az űrlapot üríteni!
-* Írj rá egy Selenium WebDriver szkriptet, ami kitölti az űrlapot!
-
 ## Feltételes utasítások
 
-* Írj egy függvényt, mely a paraméterként megadott település nevének ismeretében megmondja, hogy szélességi koordinátája
+* Írj egy függvényt, mely a paraméterként megadott település nevének ismeretében kiírja, hogy szélességi koordinátája
  nagyobb-e mint 48!
-* Írj egy függvényt, mely a paraméterként megadott település nevének ismeretében megmondja, hogy szélességi koordinátája
+* Írj egy függvényt, mely a paraméterként megadott település nevének ismeretében kiírja, hogy szélességi koordinátája
  48.2 és 48.4 közé esik-e!
-* Írj egy függvényt, mely a paraméterként megadott település azonosítójának ismeretében megmondja, hogy hossza nagyobb-e mint
+* Írj egy függvényt, mely a paraméterként megadott település azonosítójának ismeretében kiírja, hogy hossza nagyobb-e mint
 8 karakter!
 
-## Ciklusok
+
+## Ciklusok és a lista adatszerkezet
 
 * Vegyél fel `ZZZ_Sajátnév` névvel öt helyet!
 * Vegyél fel `ZZZ_Sajátnév` névvel öt helyet, ahol a lat rendre 1, 2, 3, 4, 5, és a lon koordináta rendre 1, 4, 9, 16, 25!
 * Írd ki a konzolra az összes nevet!
+* Vegyél fel egy listát három névvel, és ezeket vedd fel helyként!
+* Keresd ki egy listában megadott három névhez a koordinátájukat!
+* Lapozz az utolsó oldalra! (Kérdezd le a Next feliratú összes elemet, és addig lapozz, míg ennek mérete nem nulla!)
 
-## Listák és táblázat komponens
-
-* Hozz létre az űrlapon egy listát, hogy milyen tageket érdemes használni!
-* Hozz létre az űrlapon egy táblázatot amin városokat lehet megadni, névvel, alapítás évével, irányítószámmal!
-* Írj WebDriver szkriptet, mely lekéri a lista elemeit, és kiírja!
-* Írj egy WebDriver szkriptet, mely lekéri a táblázat összes celláját, és kiírja, hogy összesen hány cellát talált!
+## Fájlbeolvasás
 
 ## Programozási tételek
 
@@ -112,11 +93,8 @@ címet használd.
 * Számold meg, hány `Á` betűvel kezdődő település van!
 * Keresd ki a legkeletebbi és legészakabbi települést!
 
-## Komplexebb HTML komponensek
+## Page object és default values
 
-* Rádiógombok
-* Select
-* Többelemű select
+## Pytest
 
-* Bővítsd úgy az űrlapot, hogy legyenek benne rádiógombok, legördülő menü és többelemű select!
-* WebDriverrel kérd le, töltsd ki!
+* `@pytest.fixture`
