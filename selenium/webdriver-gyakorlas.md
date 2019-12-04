@@ -93,6 +93,7 @@ változót, és navigáljon a `http://localhost:8080` oldalra!
   * Írj egy `print_veterinarian_names()` függvényt, mely kiírja konzolra az összes állatorvos nevét!
   * Írj egy `print_veterinarian_with_specialities(speciality)` függvényt, mely kiírja
     a megadott szakterületen dolgozó orvosokat! Vigyázz, Linda Douglasnek kettő is meg van adva!
+    Itt is szerepel space a `span` tagben.
   * Írj egy `print_veterinarian_skill_count()` függvényt, mely kiírja az orvosokat,
     és mellé egy számot, hogy mennyi szakterülettel rendelkezik!
 
@@ -101,14 +102,14 @@ egy listát ad vissza. Menj végig a visszaadott WebElement objektumokon, és
 annak hívd meg a `find_element()` függvényét! Ez az adott részfán, az adott Node-on belül keres.
 
 ```python
-rows = driver.find_elements(By.XPATH, "//tr")
+rows = driver.find_elements(By.XPATH, "//tbody/tr")
 for row in rows:
-  name = row.find_element(By.XPATH, "//td[1]")
+  name = row.find_element(By.XPATH, "./td[1]").text
   print(name)
 ```
 
 Mivel a szakterületek külön `span` tagekben vannak, azokat kell lekérdezni, majd a `len()`-nel
-megszámolni. 
+megszámolni.
 
 * Veterians folytatás (programozási tételek):
     * Írj egy `get_veterinarian_names()` függvényt, mely visszaadja a nevek listáját!  Ehhez végig kell
