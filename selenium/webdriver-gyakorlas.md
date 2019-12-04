@@ -86,7 +86,8 @@ változót, és navigáljon a `http://localhost:8080` oldalra!
     URL-t használj!
   * Írj egy `test_find_owners_page()` függvényt, mely vizsgálja a _Find owners_ oldal
     oldal címét, címsorát, valamint megvizsgálja, hogy van-e rajta _Last name_
-    címke, és egy hozzá tartozó beviteli mező!
+    címke, és egy hozzá tartozó beviteli mező! Vigyázz, a _Last name_ szöveg után van egy
+    plusz karakter, talán egy szóköz?
 * Veterinarians oldal: a következő függvények mindegyike hívja meg a `goto_veterinarians()` függvényt!
   * Írj egy `print_veterinarian_count()` függvényt, mely kiírja az orvosok számát!
   * Írj egy `print_veterinarian_names()` függvényt, mely kiírja konzolra az összes állatorvos nevét!
