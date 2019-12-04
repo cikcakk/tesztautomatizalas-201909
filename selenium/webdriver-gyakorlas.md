@@ -44,6 +44,22 @@ parancssorból, abból a könyvtárból, melyben a letöltött `jar` állomány 
 A konzolon a `Started PetClinicApplication` szövegnek kell megjelennie. Ezután az alkalmazás
 elérhető a `http://localhost:8080` címen.
 
+Előfordulhat, hogy a `8080`-as portot már használja valamilyen szoftver. Ekkor ez az üzenet
+jelenik meg:
+
+```
+Web server failed to start. Port 8081 was already in use.
+```
+
+Ekkor helyezzetek el
+a `jar` fájl mellett egy `application.properties` állományt a következő tartalommal:
+
+```
+server.port=8081
+```
+
+Ekkor a `8081`-es porton fog elindulni, és ezt használjátok a böngészőben is.
+
 ## Feladatok
 
 Az alkalmazás teljes funkcionalitását automata Selenium WebDriver tesztekkel kell lefedni.
