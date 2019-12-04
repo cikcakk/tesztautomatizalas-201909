@@ -71,7 +71,7 @@ változót, és navigáljon a `http://localhost:8080` oldalra!
   * Írj egy `assert_title_is(title)` függvényt, amely azt ellenőrzi, hogy a megjelent oldal címe a
     paraméterként átadott érték-e! Mivel az oldalon nem jelenik meg a cím, ezért nem lehet XPath-szal
     lekérdezni, csak a `driver.title` használatával.
-  * Írj egy `assert_header_is(title)` függvényt, mely azt ellenőrzi, hogy az oldalon az első címsor (`h2`)
+  * Írj egy `assert_header_is(header_text)` függvényt, mely azt ellenőrzi, hogy az oldalon az első címsor (`h2`)
     megegyezik-e a paraméterként átadott értékkel!
   * Írj egy `assert_image_is_present(image)` függvényt, amely azt ellenőrzi, hogy a paraméterként
     megadott kép megjelenik-e a képernyőn! (Azt, hogy megjelenik-e valami, úgy tudod ellenőrizni, hogy
@@ -94,8 +94,7 @@ változót, és navigáljon a `http://localhost:8080` oldalra!
   * Írj egy `print_veterinarian_with_specialities(speciality)` függvényt, mely kiírja
     a megadott szakterületen dolgozó orvosokat! Vigyázz, Linda Douglasnek kettő is meg van adva!
   * Írj egy `print_veterinarian_skill_count()` függvényt, mely kiírja az orvosokat,
-    és mellé egy számot, hogy mennyi szakterülettel rendelkezik! (Használd a `split()` függvényt,
-    mely elemekre bontja a szakterületet, majd a `len()` függvényt, mely megszámolja!)
+    és mellé egy számot, hogy mennyi szakterülettel rendelkezik!
 
 Ennek megoldása nagyon érdekes lehet! Először XPath-szal kérd le a sorokat (`tr`), mely
 egy listát ad vissza. Menj végig a visszaadott WebElement objektumokon, és
@@ -107,6 +106,9 @@ for row in rows:
   name = row.find_element(By.XPATH, "//td[1]")
   print(name)
 ```
+
+Mivel a szakterületek külön `span` tagekben vannak, azokat kell lekérdezni, majd a `len()`-nel
+megszámolni. 
 
 * Veterians folytatás (programozási tételek):
     * Írj egy `get_veterinarian_names()` függvényt, mely visszaadja a nevek listáját!  Ehhez végig kell
