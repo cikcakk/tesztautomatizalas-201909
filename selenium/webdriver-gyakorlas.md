@@ -69,18 +69,21 @@ változót, és navigáljon a `http://localhost:8080` oldalra!
 
 * Megjelenik-e a főoldal?
   * Írj egy `assert_title_is(title)` függvényt, amely azt ellenőrzi, hogy a megjelent oldal címe a
-    paraméterként átadott érték-e!
-  * Írj egy `assert_header_is(title)` függvényt, mely azt ellenőrzi, hogy az oldalon az első címsor (`h1`)
+    paraméterként átadott érték-e! Mivel az oldalon nem jelenik meg a cím, ezért nem lehet XPath-szal
+    lekérdezni, csak a `driver.title` használatával.
+  * Írj egy `assert_header_is(title)` függvényt, mely azt ellenőrzi, hogy az oldalon az első címsor (`h2`)
     megegyezik-e a paraméterként átadott értékkel!
   * Írj egy `assert_image_is_present(image)` függvényt, amely azt ellenőrzi, hogy a paraméterként
     megadott kép megjelenik-e a képernyőn! (Azt, hogy megjelenik-e valami, úgy tudod ellenőrizni, hogy
       a `driver.find_elements()` függvényét hívod, és ellenőrzöd, hogy amit visszaad, annak hossza nagyobb, mint 0.
-      Használd a `len()` függvényt!)      
-  * Írj egy `test_home_page()` függvényt, mely az előző három függvéynt hívja, ellenőrzi a
+      Használd a `len()` függvényt!)  Az attribútum értékére a következőképp lehet `contains()`
+      függvényt használni pl.: `//a[contains(@prop,'Foo')]`.    
+  * Írj egy `test_home_page()` függvényt, mely az előző három függvényt hívja, ellenőrzi a
     címet, a címsort és a képet, hogy megjelenik-e!
 * Váltás az oldalak között
   * Írj egy `goto_home_page()`, `goto_find_owners()` és egy `goto_veterinarians()`
-    függvényt, melyek a megfelelő oldalakra navigálnak!
+    függvényt, melyek a megfelelő oldalakra navigálnak! Az adott menüpontra klikkelve váltsanak oldalt, ne
+    URL-t használj!
   * Írj egy `test_find_owners_page()` függvényt, mely vizsgálja a _Find owners_ oldal
     oldal címét, címsorát, valamint megvizsgálja, hogy van-e rajta _Last name_
     címke, és egy hozzá tartozó beviteli mező!
