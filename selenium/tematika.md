@@ -115,3 +115,7 @@ Telepítendő szoftverek:
 
 * Függvények ismétlése: paraméterátadás, visszatérési érték
 * Függvényhívás, függvény hívása függvényből, láncolt függvényhívás
+
+# Hatodik alkalom
+
+Gyakorlás
