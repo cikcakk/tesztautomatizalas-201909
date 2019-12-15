@@ -102,6 +102,13 @@ for (name, lat, lon) in cursor:
 cursor.close()
 ```
 
+Egy érték lekérdezése:
+
+```python
+cursor.execute("select count(*) from locations")
+count_found = cursor.fetchone()[0]
+```
+
 Feltétellel:
 
 ```python
