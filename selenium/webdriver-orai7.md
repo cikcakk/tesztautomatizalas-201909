@@ -67,6 +67,13 @@ xpath = f"//tr[td[text() = '{name}']]/td[2]"
 nem adunk meg paramétert, az értékek `Budapest` és `47.497912,19.040235`
 értékak legyenek!
 
+## Többszörös értékadás
+
+```python
+(first_name, last_name) = "John Doe".split(" ")
+print(f"{last_name} {first_name}")
+```
+
 
 ## Adatbáziskezelés
 
@@ -155,12 +162,70 @@ A `google_operations.py` fájlba.
 
 ## Pytest
 
+Metódusok a deklarálás sorrendjében futnak.
+
+A `tests/test_calculator.py` fájlban:
+
 ```python
 class TestCalculator():
     def setup_method(self):
         self.operand1 = 5
         self.operand2 = 10
 
+    def teardown_method(self):
+        self.operand1 = 0
+        self.operand2 = 0
+
     def test_true(self):
         assert 15 == self.operand1 + self.operand2
+```
+
+## Fájlbeolvasás
+
+Egyszerű fájl:
+
+```python
+with open("cities.csv", encoding="UTF-8") as file:
+    for line in file:
+        print(line)
+```
+
+CSV fájl:
+
+```python
+with open("cities.csv", encoding="UTF-8") as file:
+    for line in file:
+        (name, lat, lon) = line.strip().split(",")
+        print(f"{name} ({lat}, {lon})")
+```
+
+## Böngésző gombok kezelése
+
+```python
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("http://localhost:8080/server")
+
+driver.find_element_by_link_text("Create location").click()
+driver.find_element_by_id("name-input").send_keys("Test")
+driver.find_element_by_id("coords-input").send_keys("1,1")
+driver.find_element_by_class_name("btn-primary").click()
+
+driver.back()
+assert "Create location" == driver.find_element_by_xpath("//h1").text
+driver.back()
+assert "Locations" == driver.find_element_by_xpath("//h1").text
+driver.refresh()
+driver.forward()
+assert "Create location" == driver.find_element_by_xpath("//h1").text
+```
+
+## JavaScript futtatása
+
+```python
+driver = webdriver.Chrome()
+driver.get("http://localhost:8080/server")
+
+driver.execute_script("document.querySelectorAll('tr')[3].classList.add('table-primary')")
 ```

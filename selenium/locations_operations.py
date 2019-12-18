@@ -78,9 +78,10 @@ def test_create_with_invalid_name():
     assert_field_error_has_been_appeared("must not be blank")
 
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
-driver = webdriver.Chrome("/home/vicziani/Softwares/chromedriver", options=chrome_options)
+#chrome_options = webdriver.ChromeOptions()
+#chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
+#driver = webdriver.Chrome("/home/vicziani/Softwares/chromedriver", options=chrome_options)
+driver = webdriver.Chrome()
 
 #test_empty_locations()
 #test_create_location()
