@@ -8,7 +8,7 @@ keverednek össze a tesztadatok.
 Az alkalmazás futtatáshoz a saját gépre
 telepített MariaDB adatbáziskezelő szükséges. Elegendő egy üres séma `locations` néven, valamint egy `locations` felhasználó `locations` jelszóval. (HeidiSQL felületen létrehozható és felvehető.)
 
-A futtatható alkalmazás letölthető a https://raw.githubusercontent.com/vicziani/tesztautomatizalas-201909/master/selenium/locations-app.jar címről.
+A futtatható alkalmazás letölthető a https://raw.githubusercontent.com/vicziani/tesztautomatizalas-201909/master/selenium/apps/locations-app.jar címről.
 
 Az alkalmazás futtatásához Java 13 szükséges, mely letölthető a https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html címről (`jdk-13.0.1_windows-x64_bin.exe`). A feltelepítés után a következő paranccsal indítható, Windows
 parancssorból, abból a könyvtárból, melyben a letöltött `jar` állomány van:
